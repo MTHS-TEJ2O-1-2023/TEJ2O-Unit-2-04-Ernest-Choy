@@ -12,6 +12,6 @@ basic.showIcon(IconNames.Happy)
 basic.pause(1000)
 
 input.onButtonPressed(Button.A, function () {
-    microbitTemperature = input.temperature()
-    basic.showNumber(microbitTemperature)
+  microbitTemperature = input.temperature()
+  basic.showNumber(microbitTemperature)
 })
