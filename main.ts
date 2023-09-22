@@ -12,6 +12,9 @@ basic.showIcon(IconNames.Happy)
 basic.pause(1000)
 
 input.onButtonPressed(Button.A, function () {
+  basic.clearScreen()
   microbitTemperature = input.temperature()
-  basic.showNumber(microbitTemperature)
+  basic.showString('Temperature is' + (microbitTemperature).toString() + 'C.')
+
+  basic.showIcon(IconNames.Yes)
 })
